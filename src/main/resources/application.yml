@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: beyondreads
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.68c43d2f01468846
+            client-secret: aa1cbb894e35b28d81be86464b3cd9d956f0b1de
+
+
+  data:
+    cassandra:
+      keyspace-name: main
+      username: pzcaJosRwwEZrfoDrNctYIfA
+      password: F,0ZuX8FRO+I0+J-T,1.jZ2ilb.1uirb9vr+naP8B7jK8LRtYWPZR1JJUbacoJHQTEIroTZb-l6y9AChjNiR9qkACW7mhTewBh2qUwrmzBl7vXDEtn+ekL_CULQKE6Cz
+      schema-action: create_if_not_exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra.db:
+  id: 23b57899-732b-4695-b5f0-12acbec108e7-1
+  region: us-west1
+  keyspace: main
+  application.token: AstraCS:pzcaJosRwwEZrfoDrNctYIfA:b953a75e035119bf3ae5e4f357731d57363afc31ed601424ac6375f41f2d6939
+
+logging:
+  level:
+    root: DEBUG
